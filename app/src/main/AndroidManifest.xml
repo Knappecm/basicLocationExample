@@ -18,7 +18,6 @@ limitations under the License.
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.google.android.gms.location.sample.basiclocationsample" >
-
     <!--
     Android has two location request settings: {@code ACCESS_COARSE_LOCATION} and
     {@code ACCESS_FINE_LOCATION}. These settings control the accuracy of the current location. This

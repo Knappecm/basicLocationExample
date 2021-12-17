@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         if (!checkPermissions()) {
-            //requestPermissions();
+            requestPermissions();
         } else {
             getLastLocation();
         }
@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<Location>() {
                     @Override
                     public void onComplete(@NonNull Task<Location> task) {
+
                         if (task.isSuccessful() && task.getResult() != null) {
                             mLastLocation = task.getResult();
 
